@@ -11,7 +11,8 @@ import SwiftUI
 struct TrainConcurrencyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TrainsListView()
         }
     }
 }
+

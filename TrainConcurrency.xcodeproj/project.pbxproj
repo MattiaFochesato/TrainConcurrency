@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2608A96527E9DD1E00F8D58F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2608A96427E9DD1E00F8D58F /* README.md */; };
+		262999C627EDB61B00307932 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 262999C527EDB61B00307932 /* LICENSE.md */; };
 		26AAD07527E9C5FF00F3EF4D /* TrainConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD07427E9C5FF00F3EF4D /* TrainConcurrencyApp.swift */; };
-		26AAD07727E9C5FF00F3EF4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD07627E9C5FF00F3EF4D /* ContentView.swift */; };
+		26AAD07727E9C5FF00F3EF4D /* TrainsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD07627E9C5FF00F3EF4D /* TrainsListView.swift */; };
 		26AAD07927E9C60000F3EF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AAD07827E9C60000F3EF4D /* Assets.xcassets */; };
 		26AAD07C27E9C60000F3EF4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AAD07B27E9C60000F3EF4D /* Preview Assets.xcassets */; };
+		26AAD08727E9C67D00F3EF4D /* TrainsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD08627E9C67D00F3EF4D /* TrainsListViewController.swift */; };
+		26AAD08927E9C6BB00F3EF4D /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD08827E9C6BB00F3EF4D /* Train.swift */; };
+		26AAD08B27E9C6EF00F3EF4D /* TrainAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD08A27E9C6EF00F3EF4D /* TrainAPIManager.swift */; };
+		26AAD08D27E9C72D00F3EF4D /* TrainEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAD08C27E9C72D00F3EF4D /* TrainEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2608A96427E9DD1E00F8D58F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		262999C527EDB61B00307932 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		26AAD07127E9C5FF00F3EF4D /* TrainConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AAD07427E9C5FF00F3EF4D /* TrainConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainConcurrencyApp.swift; sourceTree = "<group>"; };
-		26AAD07627E9C5FF00F3EF4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26AAD07627E9C5FF00F3EF4D /* TrainsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsListView.swift; sourceTree = "<group>"; };
 		26AAD07827E9C60000F3EF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26AAD07B27E9C60000F3EF4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26AAD07D27E9C60000F3EF4D /* TrainConcurrency.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainConcurrency.entitlements; sourceTree = "<group>"; };
+		26AAD08627E9C67D00F3EF4D /* TrainsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainsListViewController.swift; sourceTree = "<group>"; };
+		26AAD08827E9C6BB00F3EF4D /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		26AAD08A27E9C6EF00F3EF4D /* TrainAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainAPIManager.swift; sourceTree = "<group>"; };
+		26AAD08C27E9C72D00F3EF4D /* TrainEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,8 @@
 		26AAD06827E9C5FF00F3EF4D = {
 			isa = PBXGroup;
 			children = (
+				262999C527EDB61B00307932 /* LICENSE.md */,
+				2608A96427E9DD1E00F8D58F /* README.md */,
 				26AAD07327E9C5FF00F3EF4D /* TrainConcurrency */,
 				26AAD07227E9C5FF00F3EF4D /* Products */,
 			);
@@ -52,8 +66,10 @@
 		26AAD07327E9C5FF00F3EF4D /* TrainConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				26AAD08327E9C60A00F3EF4D /* ViewControllers */,
+				26AAD08427E9C61100F3EF4D /* Models */,
+				26AAD08527E9C61400F3EF4D /* Views */,
 				26AAD07427E9C5FF00F3EF4D /* TrainConcurrencyApp.swift */,
-				26AAD07627E9C5FF00F3EF4D /* ContentView.swift */,
 				26AAD07827E9C60000F3EF4D /* Assets.xcassets */,
 				26AAD07D27E9C60000F3EF4D /* TrainConcurrency.entitlements */,
 				26AAD07A27E9C60000F3EF4D /* Preview Content */,
@@ -67,6 +83,32 @@
 				26AAD07B27E9C60000F3EF4D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26AAD08327E9C60A00F3EF4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26AAD08627E9C67D00F3EF4D /* TrainsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		26AAD08427E9C61100F3EF4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26AAD08827E9C6BB00F3EF4D /* Train.swift */,
+				26AAD08A27E9C6EF00F3EF4D /* TrainAPIManager.swift */,
+				26AAD08C27E9C72D00F3EF4D /* TrainEndpoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26AAD08527E9C61400F3EF4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26AAD07627E9C5FF00F3EF4D /* TrainsListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262999C627EDB61B00307932 /* LICENSE.md in Resources */,
+				2608A96527E9DD1E00F8D58F /* README.md in Resources */,
 				26AAD07C27E9C60000F3EF4D /* Preview Assets.xcassets in Resources */,
 				26AAD07927E9C60000F3EF4D /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26AAD07727E9C5FF00F3EF4D /* ContentView.swift in Sources */,
+				26AAD08927E9C6BB00F3EF4D /* Train.swift in Sources */,
+				26AAD08D27E9C72D00F3EF4D /* TrainEndpoint.swift in Sources */,
+				26AAD08727E9C67D00F3EF4D /* TrainsListViewController.swift in Sources */,
+				26AAD07727E9C5FF00F3EF4D /* TrainsListView.swift in Sources */,
+				26AAD08B27E9C6EF00F3EF4D /* TrainAPIManager.swift in Sources */,
 				26AAD07527E9C5FF00F3EF4D /* TrainConcurrencyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
